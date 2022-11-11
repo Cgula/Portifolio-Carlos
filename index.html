@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Carlos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#port">PROJETOS</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#port">PROJETOS</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="btn-mobile">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
+    </header>
+
+    <main id="home">
+        <div class="container">
+            <div class="icons">
+                <a href="https://www.instagram.com/_cgula/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.facebook.com/DELT4PSYBETA/"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://github.com/Cgula"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/carlos-gula-a54737222/?originalSubdomain=br"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="title">
+                <h1>Carlos</h1>
+                <h2>Gula</h2>
+                <h3>developer front-end</h3>
+            </div>
+        </div>
+    </main>
+
+    <section id="about">
+        <div class="container">
+            <div class="title">
+                <h1>Eu sou desenvolver front-end</h1>
+                <p> Com 21 anos curso Analise e Desenvolvimento de Sistemas na instituição Anhanguera. Tenho contato com programação desde meus 14 anos. Já obtive contato com PYTHON,HTML,CSS,JavaScript. Estou a procura de uma oportunidade para atuar em minha area de estudo.</p>
+                <div class="box-title">
+                    <p>90%</p>
+                    <div class="b1"><div class="b2"></div></div>
+                    <span>HTML</span>
+
+                    <p>80%</p>
+                    <div class="b1"><div class="b3"></div></div>
+                    <span>CSS</span>
+
+                    <p>87%</p>
+                    <div class="b1"><div class="b4"></div></div>
+                    <span>JavaScript</span>
+
+                    <p>40%</p>
+                    <div class="b1"><div class="b5"></div></div>
+                    <span>PYTHON</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="port">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    
+                    <img src="image/projeto1.png" alt="">
+                    <h1>CONFERENCIA</h1>
+                    <button>Saiba mais</button>
+                </label>
+
+                <label class="card" for="item-2" id="song-2">
+                    <img src="image/projeto2.png" alt="">
+                    <h1>LOGIN</h1>
+                    
+                    <button>Saiba mais</button>
+                </label>
+
+                <label class="card" for="item-3" id="song-3">
+                    <img src="image/projeto3.png" alt="">
+                    <h1>RESTAURANTE</h1>
+                    
+                    <button>Saiba mais</button>
+                </label>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="content-contact">
+                <div class="contact-left">
+                    <h1>Entrar em contato</h1>
+                    <div class="linha"></div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>cgula.usogeral@gmail.com</span>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>+55 47 9 9261-4060</span>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span>Papanduva, Santa Catarina, Brasil</span>
+                </div>
+                <div class="contact-right">
+                    <h1>PREENCHA O FORMULÁRIO
+                    </h1>
+                    <div class="linha"></div>
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Nome">
+                    <textarea placeholder="Mensagem"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Copyright 2022 <a href="">INICIO</a> Todos os direitos reservados</span>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-mobile").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
+</body>
+</html>
